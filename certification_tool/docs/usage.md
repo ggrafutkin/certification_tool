@@ -13,9 +13,9 @@ HW Сertification usage
 
 		$ git clone https://github.com/Mirantis/certification_tool.git
 
-* Install next packages: python-yaml, python-argparse, python-netaddr, 
-	python-keystoneclient
-  	For ubuntu:
+* Install next packages: python-yaml, python-argparse, python-netaddr, python-keystoneclient
+  	
+	For ubuntu:
 
   		$ sudo apt-get install python-yaml python-argparse python-netaddr python-keystoneclient
 

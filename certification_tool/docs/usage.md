@@ -1,4 +1,4 @@
-HW Sertification usage
+HW Сertification usage
 ----------------------
 
 1. Environment setup

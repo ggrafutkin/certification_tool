@@ -8,8 +8,10 @@ HW Sertification usage
 * You need a bash console on a computer, which have access to fuel master node
   Try to execute 'wget FUEL_URL'. It should be successful.
 
-* You need python 2.7
-* Download sertification tool from ....
+* You need python 2.7 and git
+* Download certification tool from https://github.com/Mirantis/certification_tool.git
+
+		$ git clone https://github.com/Mirantis/certification_tool.git
 
 * Install next packages: python-yaml, python-argparse, python-netaddr, 
 	python-keystoneclient
@@ -21,7 +23,7 @@ HW Sertification usage
 
   		$ sudo yum install apt-get install python-yaml python-argparse python-netaddr python-keystoneclient
 
-* Run sertification tool and pass FUEL url and auth parameters to it
+* Run certification tool and pass FUEL url and auth parameters to it. Tool is located in certification_tool/certification_tool/releases:
 * 
 		$ ./cert_tool.sh -a LOGIN:PASSWD:TENANT FUEL_URL
 
@@ -40,12 +42,12 @@ HW Sertification usage
 
 		> Please go to FUEL_CLUSTER_URL and configure network parameters. Then input 'ready' to continue :
 
-  Open shown FUEL_CLUSTER_URL in our browser, login into FUEL and setup all 
+  Open shown FUEL_CLUSTER_URL in our browser, login into FUEL, open certification_cluster and setup all 
   required network, parameters, accordingly to 
-  http://docs.mirantis.com/openstack/fuel/fuel-6.0/user-guide.html#neutron-network-settings
+  http://docs.mirantis.com/openstack/fuel/fuel-6.0/user-guide.html#neutron-network-settings. Do **NOT** deploy cluster
 
-  Then type 'ready' and press enter. Tool shoud proceede with clusater 
+  Then return to console, type 'ready' and press enter. Tool shoud proceede with clusater 
   installation. When installation finishes tool would run test and print report
-  to screen. Also report would be save into filewitj name like 
+  to screen. Also report would be save into file with name like 
   HW_cert_report_XXXX.txt, where XXXX would be current unix time.
 
